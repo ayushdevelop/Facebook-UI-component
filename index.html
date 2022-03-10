@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <section class="container">
+      <form id="input-form">
+        <div id="preview">
+          <textarea placeholder="type your message" id="message"></textarea>
+          <div id="preview-gif"></div>
+        </div>
+        <input type="button" id="gif" value="GIF" />
+        <input type="button" id="post" value="POST" />
+      </form>
+      <span class="hidden"></span>
+      <div id="gif-container" class="hidden gif">
+        <form>
+          <input type="search" placeholder="search for a gif" id="gif-search" />
+        </form>
+        <ul id="gif-list"></ul>
+      </div>
+    </section>
+    <h4>Chat Box:</h4>
+    <section class="chat"></section>
+    <script src="index.js"></script>
+  </body>
+</html>

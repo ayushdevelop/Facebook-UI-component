@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+/* essential styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* layout styling */
+.container {
+  max-width: 500px;
+  margin: 5% auto;
+}
+
+/* textbox preview styling */
+
+#preview {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #bbb;
+}
+
+#preview-gif {
+  width: 200px;
+  margin: 10px auto;
+}
+
+#preview-gif img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+#input-form {
+  padding: 0px 5px 0px;
+  box-shadow: 0px 0px 2px #333;
+  border-radius: 10px;
+}
+
+textarea#message {
+  width: 99%;
+  margin: 10px 5px 0px;
+  padding: 5px 10px;
+  border: none;
+  font: "Poppins", sans-serif;
+  font-size: 14px;
+  resize: none;
+  overflow: auto;
+}
+
+textarea#message:focus {
+  outline: none;
+}
+
+#message::-webkit-scrollbar {
+  width: 5px;
+}
+
+#message::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+#message::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: rgb(158, 157, 157);
+}
+
+#gif {
+  margin: 5px 0px 5px 2px;
+  color: #333;
+  background: #fff;
+  outline: none;
+  border: solid 1px #333;
+  padding: 4px;
+}
+
+#post {
+  margin: 5px 2px 5px 0px;
+  color: #333;
+  background: #fff;
+  outline: none;
+  border: solid 1px #333;
+  padding: 4px;
+}
+
+#gif:hover {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#post:hover {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* GIF search and preview box styling */
+span {
+  display: block;
+  width: 0px;
+  height: 0px;
+  margin-left: 9px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+}
+#gif-container {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px #333;
+  margin: 0px 0 10px 5px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#gif-search {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  padding: 5px;
+  border-bottom: dodgerblue solid 1px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#gif-container input:focus {
+  outline: none;
+}
+
+#gif-list {
+  width: 400px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#gif-list li {
+  display: inline-block;
+  width: calc(100% / 3);
+  height: 140px;
+  margin: 10px;
+  list-style: none;
+}
+
+#gif-list li img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+div.gif::-webkit-scrollbar {
+  width: 5px;
+}
+
+div.gif::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+div.gif::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: rgb(158, 157, 157);
+}
+
+/* Chat Section Styling */
+
+h4 {
+  text-align: center;
+}
+.chat {
+  max-width: 500px;
+  height: 400px;
+  margin: 10px auto;
+  color: #111;
+  font-weight: 800;
+  overflow: auto;
+  overflow-x: hidden;
+  border: solid 1px #ccc;
+}
+
+.chatbox {
+  width: 75%;
+  margin: 20px auto;
+  padding: 5px;
+  border: solid 1px #bbb;
+}
+
+.chatGIF {
+  width: 50%;
+  margin: auto;
+}
+
+.chatGIF img {
+  width: 100%;
+}
+
+.chat::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.chat::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: rgb(158, 157, 157);
+}
