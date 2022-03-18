@@ -67,11 +67,13 @@ button.addEventListener("click", async (e) => {
   gifContainer.classList.toggle("hidden");
 
   //fetching trendy GIF on every GIF button event
-  gifTrendyRender();
+  if (!document.querySelectorAll("#gif-list li").length) {
+    gifTrendyRender();
+  }
 });
 
 //logic behind switching the GIF endpoints between trendy and Search
-query.addEventListener("input", (ev) => {
+query.addEventListener("keyup", (ev) => {
   searchItem = query.value.trim();
 
   //if there is a searchItem then we will be fetching GIF from Search endpoint
@@ -98,6 +100,7 @@ gifList.addEventListener("click", (event) => {
   gifContainer.classList.toggle("hidden");
 });
 
+//logic behind posting the message
 post.addEventListener("click", (post) => {
   post.preventDefault();
 
@@ -119,6 +122,6 @@ post.addEventListener("click", (post) => {
   //reseting the preview to original value
   preview.innerHTML = "";
   gifList.innerHTML = "";
+  query.value = "";
   gifSource = "";
-  console.log(textMessage.value);
 });

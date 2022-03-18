@@ -112,7 +112,7 @@ span {
   margin-left: 9px;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 10px solid rgb(177, 177, 177);
 }
 #gif-container {
   width: 400px;
