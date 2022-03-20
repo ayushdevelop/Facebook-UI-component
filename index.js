@@ -31,7 +31,6 @@ const gifSearchRender = async () => {
     //rendering gifs in the Unordered List element
     gifData.data.map((event) => {
       gifList.innerHTML += `<li><img src = ${event.images.fixed_height.url}></li>`;
-      console.log(event);
     });
   } catch (err) {
     alert(err);
@@ -50,7 +49,6 @@ const gifTrendyRender = async () => {
     //rendering gifs in the Unordered List element
     gifData.data.map((event) => {
       gifList.innerHTML += `<li><img src = ${event.images.fixed_height.url}></li>`;
-      console.log(event);
     });
   } catch (err) {
     alert(err);
@@ -116,10 +114,10 @@ post.addEventListener("click", (post) => {
     </div>`;
   }
 
-  //reseting form value to give a better user-experience
+  //resetting form value to give a better user-experience
   document.getElementById("input-form").reset();
 
-  //reseting the preview to original value
+  //resetting the preview to original value
   preview.innerHTML = "";
   gifList.innerHTML = "";
   query.value = "";
